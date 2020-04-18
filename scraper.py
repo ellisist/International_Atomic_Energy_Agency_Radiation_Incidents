@@ -3,7 +3,7 @@ import scraperwiki
 import lxml.html
 
 # setting url to the url for our desired site to scrape (in this case, the NEWS event list for IAEA, with incidents/page = 100)
-url = "https://www-news.iaea.org/EventList.aspx?ps=100&pno=0"
+url = "http://www-news.iaea.org/EventList.aspx"
 
 # Read in a page
 html = scraperwiki.scrape(url)
