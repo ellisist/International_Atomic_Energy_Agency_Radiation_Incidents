@@ -6,7 +6,7 @@ import lxml.html
 url = "http://www-news.iaea.org/EventList.aspx"
 
 # Read in a page
-html = scraperwiki.scrape(url)
+html = scraperwiki.scrape(url, user_agent = "Mozilla/5.0")
 
 # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
